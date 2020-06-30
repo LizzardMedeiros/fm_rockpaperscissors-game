@@ -68,12 +68,20 @@
   border: 18px solid;
   width: 110px;
   height: 110px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .step-2 .icon {
   border: 30px solid;
   width: 235px;
   height: 235px;
+}
+
+.step-2 .icon.turned{
+  border: none;
+  margin: 30px;
+  background: hsl(237, 49%, 15%, 30%);
 }
 
 .hidden {
