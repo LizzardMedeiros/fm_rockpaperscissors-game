@@ -1,21 +1,21 @@
 .step-1, .step-2 {
   display: flex;
   height: 460px;
+  justify-content: space-between;
 }
 
 .step-1 {
-  background: url(/images/bg-pentagon.svg);
+  background: url(../images/bg-pentagon.svg);
   background-position: center;
   background-repeat: no-repeat;
   width: 475px;
   align-items: center;
-  justify-content: space-between;
   flex-direction: column;
 }
 
 .step-2 {
   width: 700px;
-  border: 1px solid red;
+  padding: 25px 0;
 }
 
 .step-1 .line-2, .step-1 .line-3 {
@@ -32,10 +32,18 @@
   width: 72%;  
 }
 
-.step-2 .col {
+.step-2 .block {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+}
+
+.step-2 .block:first-child {
+  padding-left: 13px;
+}
+
+.step-2 .block:last-child {
+  padding-right: 28px;
 }
 
 .step-2 h1 {
@@ -44,22 +52,7 @@
   font-size: 26px;
   letter-spacing: 2px;
   margin: 0;
-}
-
-.step-2-bk .line-1 h1:first-child {
-  padding-left: 86px;
-}
-
-.step-2-bk .line-1 h1:last-child {
-  text-align: center;
-}
-
-.step-2-bk .line-2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: -25px;
-  padding: 0 8px;
+  margin-bottom: 65px;
 }
 
 .step-1 .icon, .step-2 .icon {
@@ -78,17 +71,9 @@
 }
 
 .step-2 .icon {
-  border: 36px solid;
-  width: 300px;
-  height: 300px;
-}
-
-.step-2-bk .icon-void {
-  border-radius: 50%;
-  background: hsl(237, 49%, 15%, 50%);
-  width: 225px;
-  height: 225px;
-  margin-right: 56px;
+  border: 30px solid;
+  width: 235px;
+  height: 235px;
 }
 
 .hidden {

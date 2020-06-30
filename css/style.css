@@ -15,7 +15,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url(../design/bonus/desktop-step-1-bonus.jpg);
+  background-image: url(../design/bonus/desktop-step-2-bonus.jpg);
   background-size: 100%;
   z-index: -1;
 }
@@ -70,19 +70,17 @@ body {
 .header .score h4, .header .score h1{
   margin: 0;
   padding: 0;
+  color: hsl(229, 25%, 31%);
+  font-weight: 700;
 }
 
 .header .score h4 {
-  color: red;
   margin-top: 3px;
-  font-weight: 700;
   font-size: 1.2rem;
 }
 
 .header .score h1 {
-  color: red;
   padding: 0;
   margin-top: -2px;
-  font-weight: 700;
   font-size: 4.2rem;
 }
