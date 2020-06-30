@@ -25,55 +25,47 @@
   <!-- <div class="reference"></div> -->
 
   <div class="sector">
-      <div class="header">
-        <div class="title">
-          <h3>Rock</h3>
-          <h3>Paper</h3>
-          <h3>Scissors</h3>
-          <h3>Lizard</h3>
-          <h3>Spock</h3>
-        </div>
-        <div class="score">
-          <h4>Score</h4>
-          <h1>12</h1>
-        </div>
+    
+    <div class="header">
+      <div class="title">
+        <h3>Rock</h3>
+        <h3>Paper</h3>
+        <h3>Scissors</h3>
+        <h3>Lizard</h3>
+        <h3>Spock</h3>
       </div>
+      <div class="score">
+        <h4>Score</h4>
+        <h1>12</h1>
+      </div>
+    </div>
     
     <div class="game">
-      <div class="step-1">
+      <div class="step step-1">
         <div class="line-1">
-          <div class="icon" id="spock" style="border-color: hsl(39, 89%, 49%);">
-            <img src="images/icon-spock.svg"/>
-          </div>
+          <div class="icon btn" id="spock"></div>
         </div>
         <div class="line-2 ">
-          <div class="icon" id="scissors" style="border-color: hsl(189, 59%, 53%)">
-            <img src="images/icon-scissors.svg"/>
-          </div>
-          <div class="icon" id="paper" style="border-color: hsl(230, 89%, 62%)">
-            <img src="images/icon-paper.svg"/>
-          </div>
+          <div class="icon btn" id="scissors"></div>
+          <div class="icon btn" id="paper"></div>
         </div>
         <div class="line-3">
-          <div class="icon" id="lizard" style="border-color: hsl(261, 73%, 60%);">
-            <img src="images/icon-lizard.svg"/>
-          </div>
-          <div class="icon" id="rock" style="border-color: hsl(349, 71%, 52%);">
-            <img src="images/icon-rock.svg"/>
-          </div>
+          <div class="icon btn" id="lizard"></div>
+          <div class="icon btn" id="rock"></div>
         </div>
       </div>
-      <div class="step-2 hidden">
+      <div class="step step-2 hidden">
         <div class="block">
           <h1>You Picked</h1>
-          <div class="icon" style="border-color: hsl(189, 59%, 53%)">
-            <img src="images/icon-scissors.svg" width="100px"/>          
+          <div id="player-selected" class="icon">
+            <img src="#" width="100px" alt="Selected"/>          
           </div>        
         </div>
         <div class="block">
           <h1>The House Picked</h1> 
-          <div class="icon" style="border-color: hsl(189, 59%, 53%)">
-            <img src="images/icon-scissors.svg" width="100px"/>          
+          <div class="icon turned">
+            <div style="width:100px; height: 100px;">
+            </div>      
           </div>  
         </div>
       </div>
