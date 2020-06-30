@@ -5,33 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
   
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/board.css">
+  <script src="./js/script.js"></script>
+
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
-
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
 </head>
 <body>
+  <!-- <div class="reference"></div> -->
 
+  <div class="sector">
+      <div class="header">
+        <div class="title">
+          <h3>Rock</h3>
+          <h3>Paper</h3>
+          <h3>Scissors</h3>
+          <h3>Lizard</h3>
+          <h3>Spock</h3>
+        </div>
+        <div class="score">
+          <h4>Score</h4>
+          <h1>12</h1>
+        </div>
+      </div>
+    
+    <div class="game">
+      <div class="step-1">
+        <div class="line-1">
+          <div class="icon" id="spock" style="border-color: hsl(39, 89%, 49%);">
+            <img src="images/icon-spock.svg"/>
+          </div>
+        </div>
+        <div class="line-2">
+          <div class="icon" id="scissors" style="border-color: hsl(189, 59%, 53%)">
+            <img src="images/icon-scissors.svg"/>
+          </div>
+          <div class="icon" id="paper" style="border-color: hsl(230, 89%, 62%)">
+            <img src="images/icon-paper.svg"/>
+          </div>
+        </div>
+        <div class="line-3">
+          <div class="icon" id="lizard" style="border-color: hsl(261, 73%, 60%);">
+            <img src="images/icon-lizard.svg"/>
+          </div>
+          <div class="icon" id="rock" style="border-color: hsl(349, 71%, 52%);">
+            <img src="images/icon-rock.svg"/>
+          </div>
+        </div>
+      </div>
+      <div class="step-2 hidden">
+        <div class="block-1">
+          <h1>You Picked</h1>
+          <div class="icon" style="border-color: hsl(189, 59%, 53%)">
+            <img src="images/icon-scissors.svg" width="100px"/>          
+          </div>        
+        </div>
+        <div class="block-2">
+          <h1>The House Picked</h1> 
+          <div class="icon" style="border-color: hsl(189, 59%, 53%)">
+            <img src="images/icon-scissors.svg" width="100px"/>          
+          </div>  
+        </div>
+      </div>
+    </div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <!--<div class="attribution" style="margin-top: 30px;">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/LizzardMedeiros">LizzardMedeiros</a>.
+  </div> -->
 </body>
 </html>
