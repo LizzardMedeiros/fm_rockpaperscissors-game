@@ -25,7 +25,6 @@
   <!-- <div class="reference"></div> -->
 
   <div class="sector">
-    
     <div class="header">
       <div class="title">
         <h3>Rock</h3>
@@ -36,10 +35,9 @@
       </div>
       <div class="score">
         <h4>Score</h4>
-        <h1>12</h1>
+        <h1 id="score">0</h1>
       </div>
     </div>
-    
     <div class="game">
       <div class="step step-1">
         <div class="line-1">
@@ -56,21 +54,26 @@
       </div>
       <div class="step step-2 hidden">
         <div class="block">
-          <h1>You Picked</h1>
+          <h2>You Picked</h2>
           <div id="player-selected" class="icon">
             <img src="#" width="100px" alt="Selected"/>          
           </div>        
         </div>
+
         <div class="block">
-          <h1>The House Picked</h1> 
-          <div class="icon turned">
-            <div style="width:100px; height: 100px;">
-            </div>      
+          <div class="controls hidden">
+            <h1 id="message">You Lose</h1>
+            <button id="restart">Play Again</button>
+          </div>
+        </div>
+
+        <div class="block">
+          <h2>The House Picked</h2> 
+          <div id="house-selected" class="icon turned">
           </div>  
         </div>
       </div>
     </div>
-
   </div>
 
   <!--<div class="attribution" style="margin-top: 30px;">
