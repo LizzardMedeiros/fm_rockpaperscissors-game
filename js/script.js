@@ -1,3 +1,7 @@
+let score = 0;
+let playerChoice = null;
+let houseChoice = null;
+
 const icons = {
   spock: {
     icon: 'icon-spock.svg',
@@ -36,10 +40,6 @@ const messages = {
   lose: 'You lose',
   tie: 'Tie!'
 }
-
-let score = 0;
-let playerChoice = null;
-let houseChoice = null;
 
 window.onload = function() {
   const buttons = document.querySelectorAll('.btn');

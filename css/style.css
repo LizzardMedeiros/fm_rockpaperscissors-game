@@ -6,7 +6,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .reference {
@@ -15,7 +15,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url(../design/bonus/desktop-step-4-bonus.jpg);
+  background-image: url(../design/bonus/desktop-step-1-bonus.jpg);
   background-size: 100%;
   z-index: -1;
 }
@@ -83,4 +83,37 @@ body {
   padding: 0;
   margin-top: -2px;
   font-size: 4.2rem;
+}
+
+@media only screen and (max-width: 967px) {
+  .header {
+    margin-top: 30px;
+    height: 95px;
+    width: calc(80% + 12px);
+    border: 2px solid grey;
+    border-radius: 5px;
+  }
+
+  .header .title h3 {
+    font-size: 0.8em;
+    padding: -15px 0;
+    margin: 0 2px;
+    line-height: 12px;
+  }
+
+  .header .score {
+    border-radius: 6px;
+    align-content: center;
+    padding: 10px 0;
+    width: 90px;
+    margin-right: 10px;
+  }
+
+  .header .score h4 {
+    font-size: 0.7rem;
+  }
+  
+  .header .score h1 {
+    font-size: 2rem;
+  }
 }
