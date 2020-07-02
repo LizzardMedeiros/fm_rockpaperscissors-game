@@ -75,7 +75,7 @@
 @media only screen and (max-width: 967px) {
   #rules {
     right: auto;
-    bottom: 64px;
+    bottom: 0;
   }
   .modal-content {
     margin: 0 auto;
