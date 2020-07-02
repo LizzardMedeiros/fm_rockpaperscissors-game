@@ -1,0 +1,130 @@
+.step-1, .step-2 {
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+}
+
+.step-1 {
+  background: url(../images/bg-pentagon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  width: 310px;
+  height: 310px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.step-2 {
+  padding: 55px 0;
+  align-items: flex-start;
+  justify-content: center;
+  height: 350px;
+}
+
+.step-1 .line-2, .step-1 .line-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step-1 .line-2 {
+  width: 100%;
+  margin-top: -30px;
+}
+
+.step-1 .line-3 {
+  width: 72%;  
+}
+
+.step-2 .block {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step-2 .block:first-child {
+  padding-left: 5px;
+  padding-right: 20px;
+}
+
+.step-2 .block:nth-child(2) {
+  position: absolute;
+  margin-top: 240px;
+  text-align: center;
+  justify-content: center;
+  min-width: 70px;
+}
+
+.step-2 .block:last-child {
+  padding-left: 30px;
+}
+
+.step-2 h1, .step-2 h2 {
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.step-2 h1 {
+  font-size: 56px;
+  margin-bottom: 15px;
+}
+
+.step-2 h2 {
+  color: white;
+  font-size: 17px;
+  margin-top: 25px;
+  letter-spacing: 1px;
+}
+
+.step-2 button {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 13px 55px;
+  margin-bottom: 10px;
+}
+
+.step-1 .icon, .step-2 .icon {
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-1 .icon {
+  cursor: pointer;
+  border: 12px solid;
+  width: 75px;
+  height: 75px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.step-2 .icon {
+  border: 15px solid;
+  width: 100px;
+  height: 100px;
+}
+
+.step-2 .icon img{
+  width: 50px;
+}
+
+.step-2 .icon.turned{
+  border: none;
+  margin: 15px;
+  background: hsl(237, 49%, 15%, 30%);
+}
+
+.hidden {
+  display: none;
+}

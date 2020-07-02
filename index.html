@@ -8,8 +8,10 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/board.css">
+  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="./css/board.css" media="only screen and (min-width: 968px)"/>
+  <link rel="stylesheet" href="./css/board-mobile.css" media="only screen and (max-width: 967px)"/>
+  <link rel="stylesheet" href="./css/modal.css"/>
   <script src="./js/script.js"></script>
 
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
@@ -74,11 +76,40 @@
         </div>
       </div>
     </div>
+    <button id="rules">Rules</button>
+    <!-- Modal content -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Rules</h3>
+          <span class="close">&times;</span>
+        </div>
+        <img src="./images/image-rules-bonus.svg" alt="Rules"/>
+      </div>
+    </div>
   </div>
 
-  <!--<div class="attribution" style="margin-top: 30px;">
+  <div class="attribution" style="margin-top: 30px;">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/LizzardMedeiros">LizzardMedeiros</a>.
-  </div> -->
+  </div>
 </body>
+
+<script>
+  const modal = document.getElementById("modal");
+  const btn = document.getElementById("rules");
+  const span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  window.onclick = function(event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
 </html>
