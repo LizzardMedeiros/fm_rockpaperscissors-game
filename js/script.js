@@ -55,6 +55,7 @@ function loadAll() {
   playerChoice = null;
   houseChoice = null;
   //reset all;
+  document.querySelector("#rules").classList.remove('hidden');
   document.querySelector('.step-1').classList.remove('hidden');
   document.querySelector('.step-2').classList.add('hidden');
   document.querySelector('.controls').classList.add('hidden');
@@ -67,6 +68,8 @@ function selectIcon(ev) {
   const step = document.querySelector('.step-1');
   const nextStep = document.querySelector('.step-2');
   const selectedIcon = document.querySelector('#player-selected');
+
+  document.querySelector("#rules").classList.add('hidden');
 
   const {icon, color} = icons[ev.target.id];
   

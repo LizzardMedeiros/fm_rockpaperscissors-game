@@ -111,6 +111,10 @@
   height: 235px;
 }
 
+.step-2 .icon img{
+  width: 100px;
+}
+
 .step-2 .icon.turned{
   border: none;
   margin: 30px;
